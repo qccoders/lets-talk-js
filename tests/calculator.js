@@ -1,10 +1,10 @@
 const { expect } = require('chai');
 const sinon = require('sinon');
 
-const index = require('../src/index.js');
+const calculator = require('../src/calculator.js');
 const math = require('../src/lib/math');
 
-describe('index', () => {
+describe('calculator', () => {
   const sandbox = sinon.createSandbox();
 
   beforeEach(() => {
@@ -17,7 +17,7 @@ describe('index', () => {
 
   describe('add5and5', () => {
     it('returns 10', () => {
-      return expect(index.add5and5()).to.eql(10);
+      return expect(calculator.add5and5()).to.eql(10);
     })
   });
 });
